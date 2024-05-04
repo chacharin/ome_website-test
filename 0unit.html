@@ -17,21 +17,14 @@
   <link rel="stylesheet" href="./CSS/style-card-name.css">
   <!--Java-script Load-->
   <script src="./JS/script-load-head-foot.js"></script>
-<style>
-    body {font-family: 'Sarabun', sans-serif;display: flex;
-    flex-direction: column;min-height: 100vh; 
-    background-repeat: repeat;}
 
+<style>
+    body {font-family: 'Sarabun', sans-serif;display: flex;flex-direction: column;min-height: 100vh;
+}
     .content {
       flex: 1;
     }
-    .center-content {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-@media (max-width: 768px) { .mainpage {width: 100%;}}
+@media (max-width: 768px) { .mainpage {font-size: 20px;padding-bottom: 25px;font-weight: bold;}}
 </style>
 </head>
 <!---------------------------------------------Loading------------------------------------------------------------->
@@ -40,13 +33,14 @@
   <div id="header"></div>
 <br>
 <!---------------------------Content Start Here---------------------------------------->
-
-<div class="content center-content" >
-    <img class= "mainpage"src="IMG/popup.jpg" width="60%">
-        <br>
-        <br>
-            <a href="0index.html"><button type="button" class="btn btn-warning">เข้าสู่เว็บไซต์ สศท.สปท.</button></a>
-            <a href="index.html"><button type="button" class="btn btn-warning">ลงนามถวายพระพร</button></a>
+<div class="content">
+<div class="container my-5">
+<h3 class="mainpage">หน่วยขึ้นตรง สศท.สปท.</h3>
+<br>
+    <a href="0science-division.html"><button type="button" class="btn btn-warning">กองวิทยาการ</button></a>
+    <a href="0training-division.html"><button type="button" class="btn btn-warning">กองฝึกอบรม</button></a>
+    <a href="0support-division.html"><button type="button" class="btn btn-warning"> กองสนับสนุน </button></a>
+</div>  
 </div>
 <!--------------------------------------- Footer ---------------------------------------------->
 <div id="footer"></div>

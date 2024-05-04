@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="./JS/script-load-head-foot.js"></script>
+  <script src="./JS/script-load-support-HR.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สำนักการศึกษาทหาร สปท.</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarabun&display=swap">
+  <link rel="stylesheet" href="./CSS/style-head.css">
+  <link rel="stylesheet" href="./CSS/style-HR-table.css">
+  <style>
+    body {font-family: 'Sarabun', sans-serif;display: flex;flex-direction: column;min-height: 100vh;
+}
+    .content {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+<div id="header"></div> <!-- This is where the header will be loaded -->
+<!-- Bootstrap JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Load header dynamically -->
+
+<div id="header"></div>
+
+<!-----------------------Content Start Here---------------------------------->
+
+  <div class="container">
+    <h2 class="text-center mt-4">กองสนับสนุน</h2>
+    <h4 class="text-center mt-4">สำนักการศึกษาทหาร สถาบันวิชาการป้องกันประเทศ</h4>
+    <br>
+    <p style="text-align:justify;">
+      มีหน้าที่ดำเนินการ และประสานงาน กำกับ ดูแลเกี่ยวกับการธุรการ การสารบรรณ การข่าว การกำลังพล การ รปภ. การกิจการ
+      พลเรือน การเงิน การบัญชีการงบประมาณ ในความรับผิดชอบให้เป็นไปตามระเบียบแบบแผนของทางราชการ
+      การจัดเตรียม จัดหาเครื่องช่วยฝึก และโสตทัศนูปกรณ์ การดูแลรักษาอาคารเรียน และสถานที่ ตลอดจนดำเนินการเกี่ยวกับการ
+      ส่งกำลังบำรุง
+    </p>
+    <h4 class="text-left mt-4">กำลังพล กฝอร.สศท.สปท.</h4>
+  </div>
+
+  <div class="container">
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>รูปถ่าย</th>
+          <th>ชื่อ</th>
+          <th>ตำแหน่ง</th>
+          <th>e-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data will be inserted here dynamically -->
+      </tbody>
+    </table>
+  </div>
+
+  <div id="footer"></div>
+   
+</body>
+
+</html>
