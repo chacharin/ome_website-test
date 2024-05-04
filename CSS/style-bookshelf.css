@@ -37,7 +37,7 @@
 .image-shelf a img {
     max-width: 100%; /* Ensure images don't exceed the width of their container */
     height: auto; /* Allow the height to adjust proportionally */
-    padding: 10px 10px; /* Add some horizontal spacing between images */
+    padding: 5px 5px; /* Add some horizontal spacing between images */
 }
 
 .image-shelf a:last-child img {
