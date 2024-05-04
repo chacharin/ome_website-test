@@ -41,7 +41,7 @@
 }
 
 .image-shelf a:last-child img {
-  margin-left: 10px; /* Adjust margin to move the last image away from the second image */
+  margin-left: 5px; /* Adjust margin to move the last image away from the second image */
 }
 
 }
