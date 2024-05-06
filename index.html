@@ -15,39 +15,68 @@
   <link rel="stylesheet" href="./CSS/style-head.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/style-card-name.css">
-  <!--Java-script Load-->
+  <!-- Java-script Load -->
   <script src="./JS/script-load-head-foot.js"></script>
-<style>
-    body {font-family: 'Sarabun', sans-serif;display: flex;
-    flex-direction: column;min-height: 100vh; 
-    background-repeat: repeat;}
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-repeat: repeat;
+    }
 
     .content {
       flex: 1;
     }
-    .center-content {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-@media (max-width: 768px) { .mainpage {width: 100%;}}
-</style>
-</head>
-<!---------------------------------------------Loading------------------------------------------------------------->
-<body>
-<!----------------------------------- แถบดำส่วนหัว ------------------------------------->
-  <div id="header"></div>
-<br>
-<!---------------------------Content Start Here---------------------------------------->
 
-<div class="content center-content" >
-    <img class= "mainpage"src="IMG/popup.jpg" width="60%">
-        <br>
-        <br>
-            <a href="0index.html"><button type="button" class="btn btn-warning">เข้าสู่เว็บไซต์ สศท.สปท.</button></a>
-            <a href="index.html"><button type="button" class="btn btn-warning">ลงนามถวายพระพร</button></a>
-</div>
-<!--------------------------------------- Footer ---------------------------------------------->
-<div id="footer"></div>
+    .center-content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      .mainpage {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Content Start Here -->
+  <div class="content center-content">
+    <img class="mainpage" src="IMG/popup.jpg" width="60%" id="mainImage">
+    <br>
+    <br>
+    <a href="0index.html"><button type="button" class="btn btn-warning">เข้าสู่เว็บไซต์ สศท.สปท.</button></a>
+    <a href="https://www.royaloffice.th" target="_blank" id="signButton"><button type="button" class="btn btn-warning">ลงนามถวายพระพร</button></a>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- JavaScript to fetch data from API and update elements -->
+  <script>
+    // Fetch data from the API
+    fetch('https://script.google.com/macros/s/AKfycbxQPvyIKXwutUKV_csium4YYcxITx54QgfBYAzHPIvtDlbYNfney4hLVjspmsm0f_BI/exec')
+      .then(response => response.json())
+      .then(data => {
+        // Store fetched data in variables
+        const imageUrl = data.Image;
+        const linkUrl = data.Link;
+
+        // Update image source
+        document.getElementById('mainImage').src = imageUrl;
+        // Update button link
+        document.getElementById('signButton').href = linkUrl;
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
 </html>
