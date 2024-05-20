@@ -17,6 +17,25 @@
   padding-left: 15px;
 }
 
+.footer {
+            background-color: #212529;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer img {
+            margin-top: 10px;
+        }
+
+
+
+
 @media (max-width: 768px) {
   .logo {
       max-width: 100px; /* Adjust the maximum width of the logo for smaller screens */
