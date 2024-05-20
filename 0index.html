@@ -97,5 +97,26 @@ body {font-family: 'Sarabun', sans-serif;}
 </body>
 <!--------------------------------------- Footer ---------------------------------------------->
 <hr style="margin: auto;" width=60%>
-<div id="footer"></div>
+<div id="footer">
+  <p id="visitor-counter" style="text-align: center;">Visitor Count: <span id="count">0</span></p>
+</div>
+
+<script>
+// JavaScript code to handle the visitor counter
+(function() {
+  // Check if 'visitorCount' exists in localStorage
+  if (!localStorage.getItem('visitorCount')) {
+    localStorage.setItem('visitorCount', 0);
+  }
+
+  // Increment the visitor count
+  let count = parseInt(localStorage.getItem('visitorCount'), 10);
+  count++;
+  localStorage.setItem('visitorCount', count);
+
+  // Update the visitor counter display
+  document.getElementById('count').innerText = count;
+})();
+</script>
+
 </html>
